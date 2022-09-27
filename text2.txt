@@ -1,0 +1,42 @@
+Python Error and In-built Exception in Python
+
+A small typing mistake can lead to an error in any programming language because we must follow the syntax rules while coding in any programming language.
+
+Same is the case with python, in this tutorial we will learn about syntax errors and exceptions in python along with listing down some of the commonly occuring Exceptions in python.
+
+Python: Syntax Error
+This is the most common and basic error situation where you break any syntax rule like if you are working with Python 3.x version and you write the following code for printing any statement,
+
+print "I love Python!"
+
+SyntaxError: Missing parentheses in call to 'print'.
+
+Because, Python 3 onwards the syntax for using the print statement has changed. Similarly if you forget to add colon(:) at the end of the if condition, you will get a SyntaxError:
+
+if 7 > 5
+    print("Yo Yo!")
+
+SyntaxError: invalid syntax
+
+Hence syntax errors are the most basic type of errors that you will encounter while coding in python and these can easily be fixed by seeing the error message and correcting the code as per python syntax.
+
+
+Python: What is an Exception?
+Contrary to syntax error, exception is a type of error which is caused as a result of malfunctioning of the code during execution.
+
+Your code might not have any syntax error, still it can lead to exceptions when it is executed.
+
+Let's take the most basic example of dividing a number by zero:
+
+a = 10
+b = 0
+print("Result of Division: " + str(a/b))
+
+Traceback (most recent call last): 
+  File "main.py", line 3, in <module>
+    print("Result of Division: " + str(a/b))
+ZeroDivisionError: division by zero
+
+As we can see in the output, we got ZeroDivisionError while the syntax of our python code was absolutely correct, because in this case the error or we should say the exception was generated while code execution.
+
+Python returns a very detailed exception message for us to understand the origin point and reason for the exception so that it becomes easier for us to fix our code.

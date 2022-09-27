@@ -1,0 +1,27 @@
+Operator overloading in Python
+
+Operators are used in Python to perform specific operations on the given operands. The operation that any particular operator will perform on any predefined data type is already defined in Python.
+
+Each operator can be used in a different way for different types of operands. For example, + operator is used for adding two integers to give an integer as a result but when we use it with float operands, then the result is a float value and when + is used with string operands then it concatenates the two operands provided.
+
+This different behaviour of a single operator for different types of operands is called Operator Overloading. The use of + operator with different types of operands is shown below:
+
+>>> x=10
+>>> y=20
+>>> x+y
+30
+
+>>> z=10.4
+>>> x+z
+20.4
+
+>>> s1 = 'hello '
+>>> s2 = 'world'
+>>> s1+s2
+'hello world'
+Can + Operator Add anything?
+The answer is No, it cannot. Can you use the + operator to add two objects of a class. The + operator can add two integer values, two float values or can be used to concatenate two strings only because these behaviours have been defined in python.
+
+So if you want to use the same operator to add two objects of some user defined class then you will have to defined that behaviour yourself and inform python about that.
+
+If you are still not clear, let's create a class and try to use the + operator to add two objects of that class,
